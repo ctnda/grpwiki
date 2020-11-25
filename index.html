@@ -143,11 +143,15 @@ Error message and password prompt
 
 <li>$:/config/AutoSave</li>
 
+<li>$:/config/DefaultSidebarTab</li>
+
 <li>$:/config/EmptyStoryMessage</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/themes/jd/Mono/Buttons/switch-palette</li>
+
+<li>$:/config/Plugins/Disabled/$:/plugins/sq/Stories</li>
 
 <li>$:/core</li>
 
@@ -179,6 +183,8 @@ Error message and password prompt
 
 <li>$:/state/tab--2112689675</li>
 
+<li>$:/state/tab--86143343</li>
+
 <li>$:/state/tab--959111941</li>
 
 <li>$:/state/tab-1749438307</li>
@@ -192,6 +198,8 @@ Error message and password prompt
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/temp/HidePluginWarning</li>
 
 <li>$:/temp/info-plugin</li>
 
@@ -228,6 +236,9 @@ Error message and password prompt
 <div created="20201125125428086" modified="20201125125428086" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
+<div created="20201125132009482" modified="20201125132009482" title="$:/config/DefaultSidebarTab">
+<pre>$:/core/ui/SideBar/Recent</pre>
+</div>
 <div created="20190202142826323" creator="jd" modified="20190203153504860" modifier="jd" title="$:/config/EmptyStoryMessage">
 <pre>{{$:/themes/jd/Mono/EmptyStoryMessage}}</pre>
 </div>
@@ -236,6 +247,9 @@ Error message and password prompt
 </div>
 <div created="20201125130544980" modified="20201125131909741" title="$:/config/PageControlButtons/Visibility/$:/themes/jd/Mono/Buttons/switch-palette">
 <pre>hide</pre>
+</div>
+<div created="20201125132642369" modified="20201125132642369" title="$:/config/Plugins/Disabled/$:/plugins/sq/Stories">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -10215,22 +10229,25 @@ Error message and password prompt
 <div created="20201125125019397" modified="20201125125022276" title="$:/SiteTitle">
 <pre>PolselliWiki</pre>
 </div>
-<div created="20201125130129285" modified="20201125131915523" title="$:/state/tab--1963855381">
-<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
+<div created="20201125130129285" modified="20201125132631274" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Theme</pre>
 </div>
 <div created="20201125130248383" modified="20201125131831690" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
+<div created="20201125132321526" modified="20201125132323263" title="$:/state/tab--86143343">
+<pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
+</div>
 <div created="20201125130251631" modified="20201125131838185" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/Stylesheets</pre>
 </div>
-<div created="20201125123530249" modified="20201125131839922" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20201125123530249" modified="20201125132638184" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Plugins</pre>
 </div>
 <div created="20201125123531217" modified="20201125130737434" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/General</pre>
 </div>
-<div created="20201125125403666" modified="20201125132113021" title="$:/state/tab/sidebar--595412856">
+<div created="20201125125403666" modified="20201125132005363" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20201125131900730" modified="20201125131903490" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -10239,8 +10256,11 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>yes</pre>
 </div>
-<div list="$:/Import Welcome" title="$:/StoryList">
+<div created="20201125132318953" list="" modified="20201125132639688" title="$:/StoryList">
 <pre></pre>
+</div>
+<div created="20201125132332807" modified="20201125132332807" title="$:/temp/HidePluginWarning">
+<pre>yes</pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
@@ -10300,8 +10320,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20190202142800922" creator="jd" modified="20190202142800922" modifier="jd" title="$:/theme">
-<pre>$:/themes/jd/Mono</pre>
+<div created="20190202142800922" creator="jd" modified="20201125132633338" modifier="jd" title="$:/theme">
+<pre>$:/plugins/tesseract/Moments</pre>
 </div>
 <div author="JD" core-version="&gt;=5.1.19" created="20190202102252527" creator="jd" dependents="$:/themes/tiddlywiki/vanilla" description="For writing long texts" list="contents" modified="20190203163019606" modifier="jd" name="Mono" plugin-type="theme" source="http://j.d.mono.tiddlyspot.com" title="$:/themes/jd/Mono" type="application/json" version="1.0.32">
 <pre>{
