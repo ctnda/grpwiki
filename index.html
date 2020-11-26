@@ -159,6 +159,8 @@ Error message and password prompt
 
 <li>$:/config/Plugins/Disabled/$:/plugins/sq/Stories</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/core</li>
 
 <li>$:/core/images/advanced-search-button</li>
@@ -238,6 +240,10 @@ Error message and password prompt
 <li>$:/SiteTitle</li>
 
 <li>$:/state/addplugins/tab-1342078386</li>
+
+<li>$:/state/dynamictables/exmp03/expand</li>
+
+<li>$:/state/edit/references--771218907</li>
 
 <li>$:/state/editpreviewtype</li>
 
@@ -539,15 +545,31 @@ Error message and password prompt
 
 <li>$:/view</li>
 
-<li>Delirio Caldo (1972)</li>
+<li>Delirio Caldo</li>
+
+<li>Delitti a luce rossa</li>
 
 <li>Draft of 'New Tiddler'</li>
 
-<li>La verità secondo Satana (1972)</li>
+<li>Frida professione menager</li>
+
+<li>Giochi erotici di una famiglia per bene</li>
+
+<li>La verità secondo Satana</li>
+
+<li>Mania</li>
 
 <li>Menu</li>
 
 <li>Movies</li>
+
+<li>Oscenità</li>
+
+<li>Riti, magie nere e segrete orge nel trecento</li>
+
+<li>Rivelazioni di uno psichiatra sul mondo perverso del sesso</li>
+
+<li>Torino centrale del vizio</li>
 
 <li>Welcome</li>
 
@@ -592,6 +614,9 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <pre>hide</pre>
 </div>
 <div created="20201125132642369" modified="20201125132642369" title="$:/config/Plugins/Disabled/$:/plugins/sq/Stories">
+<pre>yes</pre>
+</div>
+<div created="20201126090906751" modified="20201126090906751" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
@@ -10812,10 +10837,16 @@ Movies</pre>
 <div created="20201125135712282" modified="20201125135843250" title="$:/state/addplugins/tab-1342078386">
 <pre>$:/config/KookmaPluginLibrary</pre>
 </div>
+<div created="20201126090530957" modified="20201126092740948" title="$:/state/dynamictables/exmp03/expand" type="application/json">
+<pre>{}</pre>
+</div>
+<div created="20201126090905190" modified="20201126090905190" title="$:/state/edit/references--771218907">
+<pre>show</pre>
+</div>
 <div created="20201125133305688" modified="20201125133305688" title="$:/state/editpreviewtype">
 <pre>$:/core/ui/EditTemplate/body/preview/output</pre>
 </div>
-<div created="20201125142352560" modified="20201126084742089" title="$:/state/FABs">
+<div created="20201125142352560" modified="20201126092549870" title="$:/state/FABs">
 <pre>no</pre>
 </div>
 <div created="20201125141645088" modified="20201125141646463" title="$:/state/plugin-info--1001812834-$:/themes/jd/Material--1053758929">
@@ -10833,8 +10864,8 @@ Movies</pre>
 <div created="20201125133259623" modified="20201125133259623" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20201125141939303" modified="20201125141940178" title="$:/state/sidebar">
-<pre>yes</pre>
+<div created="20201125141939303" modified="20201126090826438" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div created="20201125130129285" modified="20201126082937502" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
@@ -10872,7 +10903,7 @@ Movies</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201126082627222" list="[[Draft of 'New Tiddler']] Welcome [[La verità secondo Satana (1972)]] [[Delirio Caldo (1972)]] Movies" modified="20201126085833021" title="$:/StoryList">
+<div created="20201126090358831" list="Movies" modified="20201126092333666" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201125142454933" list="$:/core/ui/SideBar/Recent $:/core/ui/SideBar/More" modified="20201125142506303" title="$:/tags/SideBar">
@@ -12334,7 +12365,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
     }
 }</pre>
 </div>
-<div created="20180327133017293" creator="jd" modified="20201125141940177" modifier="jd" tags="" title="$:/themes/jd/Material/ConfigDB" type="application/json">
+<div created="20180327133017293" creator="jd" modified="20201126090826437" modifier="jd" tags="" title="$:/themes/jd/Material/ConfigDB" type="application/json">
 <pre>{
     &quot;fabmargin&quot;: &quot;5px&quot;,
     &quot;fabsize&quot;: &quot;56px&quot;,
@@ -12348,7 +12379,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
     &quot;fab6&quot;: &quot;&quot;,
     &quot;headerbtns&quot;: &quot;5&quot;,
     &quot;icon&quot;: &quot;{{$:/core/images/menu-button}}&quot;,
-    &quot;statelists&quot;: &quot;yes&quot;,
+    &quot;statelists&quot;: &quot;no&quot;,
     &quot;mobilepopups&quot;: &quot;yes&quot;,
     &quot;outlinenone&quot;: &quot;no&quot;,
     &quot;fabiconsize&quot;: &quot;26px&quot;,
@@ -12836,27 +12867,46 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20201125131843788" modified="20201125142403725" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20201126085837015" modified="20201126090116334" role="director" tags="movies" title="Delirio Caldo (1972)">
+<div bv="none" created="20201126085837015" modified="20201126091032220" rp="director" tags="movies" title="Delirio Caldo" year="1972">
 <pre>Film del 1972</pre>
+</div>
+<div created="20201126092521957" modified="20201126092547195" tags="movies" title="Delitti a luce rossa" year="1996">
+<pre></pre>
 </div>
 <div created="20201126084742100" draft.of="New Tiddler" draft.title="New Tiddler" modified="20201126084815347" tags="" title="Draft of 'New Tiddler'">
 <pre></pre>
 </div>
-<div created="20201126085818693" modified="20201126085830420" tags="movies" title="La verità secondo Satana (1972)">
+<div created="20201126092549882" modified="20201126092655975" pic="https://m.media-amazon.com/images/M/MV5BMGQxMGU5YjQtOTBiYy00NzI5LWJjMGEtMTQwNzc2NWZmMWQ0XkEyXkFqcGdeQXVyNjE0NjU5NDQ@._V1_.jpg" tags="movies" title="Frida professione menager" year="2000">
+<pre></pre>
+</div>
+<div created="20201126092413958" modified="20201126092432739" tags="movies" title="Giochi erotici di una famiglia per bene" year="1975">
+<pre></pre>
+</div>
+<div created="20201126085818693" modified="20201126092352059" tags="movies" title="La verità secondo Satana" year="1972">
 <pre>Film</pre>
+</div>
+<div created="20201126092356619" modified="20201126092407879" tags="movies" title="Mania" year="1974">
+<pre></pre>
 </div>
 <div created="20201125134233054" list-before="$:/core/ui/SideBar/Recent" modified="20201125142550549" tags="$:/tags/SideBar" title="Menu" type="text/vnd.tiddlywiki">
 <pre>!!! [[Renato Polselli]]
 !!! [[Bruno Vani]]
 !!! [[Movies]]</pre>
 </div>
-<div created="20201125133248871" modified="20201126090111772" tags="" title="Movies">
-<pre>A list of movies
-
-* [[La verità secondo Satana (1972)]]
-* [[Delirio Caldo (1972)]]
-
-&lt;&lt;table-dynamic filter:&quot;[tag[movies]]&quot; indexes:&quot;title tags role&quot;  sortOp:&quot;sortan&quot; caption:&quot;''Table 1. Dynamic table from data tiddler''&quot;&gt;&gt;</pre>
+<div created="20201125133248871" modified="20201126092814228" tags="" title="Movies">
+<pre>&lt;&lt;table-dynamic filter:&quot;[tag[movies]]&quot; fields:&quot;tbl-expand title year rp bv&quot; stateTiddler:&quot;exmp03&quot; class:&quot;w-100 thead-dark&quot; caption:&quot;''Movies where Renato Polselli and/or Bruno Vani were involved in:''&quot;&gt;&gt;</pre>
+</div>
+<div created="20201126092506431" modified="20201126092518754" tags="movies" title="Oscenità" year="1980">
+<pre></pre>
+</div>
+<div created="20201126092222937" modified="20201126092255098" tags="movies" title="Riti, magie nere e segrete orge nel trecento" year="1973">
+<pre></pre>
+</div>
+<div created="20201126092302394" modified="20201126092330401" tags="movies" title="Rivelazioni di uno psichiatra sul mondo perverso del sesso" year="1973">
+<pre></pre>
+</div>
+<div created="20201126092437650" modified="20201126092459931" tags="movies" title="Torino centrale del vizio" year="1979">
+<pre></pre>
 </div>
 <div created="20201125125854324" modified="20201125125922552" tags="" title="Welcome">
 <pre></pre>
