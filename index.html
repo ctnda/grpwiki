@@ -159,6 +159,8 @@ Error message and password prompt
 
 <li>$:/config/Plugins/Disabled/$:/plugins/sq/Stories</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/core</li>
 
 <li>$:/core/images/advanced-search-button</li>
@@ -543,15 +545,23 @@ Error message and password prompt
 
 <li>$:/view</li>
 
-<li>Delirio Caldo (1972)</li>
+<li>Avventura al motel</li>
+
+<li>Delirio caldo</li>
+
+<li>Delitto al luna park</li>
 
 <li>Draft of 'Welcome'</li>
 
-<li>La verità secondo Satana (1972)</li>
+<li>La verità secondo Satana</li>
 
 <li>Menu</li>
 
 <li>Movies</li>
+
+<li>Solitudine</li>
+
+<li>Ultimatum alla vita</li>
 
 <li>Welcome</li>
 
@@ -596,6 +606,9 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <pre>hide</pre>
 </div>
 <div created="20201125132642369" modified="20201125132642369" title="$:/config/Plugins/Disabled/$:/plugins/sq/Stories">
+<pre>yes</pre>
+</div>
+<div created="20201126101714998" modified="20201126101714998" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
@@ -10225,36 +10238,15 @@ Movies</pre>
 <div created="20201125123532548" modified="20201125123533321" title="$:/GitHub/Username">
 <pre>ctnda</pre>
 </div>
-<div status="complete" title="$:/Import">
-<pre>The following tiddlers were imported:
-
-# [[$:/palette]]
-# [[$:/theme]]
-# [[$:/core/ui/Buttons/more-page-actions]]
-# [[$:/core/images/advanced-search-button]]
-# [[$:/core/images/cancel-button]]
-# [[$:/core/images/close-button]]
-# [[$:/core/images/delete-button]]
-# [[$:/core/images/done-button]]
-# [[$:/core/images/down-arrow]]
-# [[$:/core/images/edit-button]]
-# [[$:/core/images/export-button]]
-# [[$:/core/images/info-button]]
-# [[$:/core/images/left-arrow]]
-# [[$:/core/images/menu-button]]
-# [[$:/core/images/new-button]]
-# [[$:/core/images/new-image-button]]
-# [[$:/core/images/new-journal-button]]
-# [[$:/core/images/options-button]]
-# [[$:/core/images/right-arrow]]
-# [[$:/core/images/save-button]]
-# [[$:/core/images/up-arrow]]
-# [[$:/themes/jd/Material]]
-# [[$:/themes/jd/Material/images/overflow-button]]
-# [[$:/themes/jd/Material/Template/Header-Sidebar]]
-# [[$:/themes/jd/Material/ConfigDB]]
-# [[$:/plugins/BurningTree/hammerwidgets]]
-# [[$:/plugins/tiddlywiki/hammerjs]]</pre>
+<div plugin-type="import" status="pending" title="$:/Import" type="application/json">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;Untitled&quot;: {
+            &quot;title&quot;: &quot;Untitled&quot;,
+            &quot;text&quot;: &quot;Delirio Caldo (1972)&quot;
+        }
+    }
+}</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -10886,7 +10878,7 @@ Movies</pre>
 <div created="20201125133305688" modified="20201125133305688" title="$:/state/editpreviewtype">
 <pre>$:/core/ui/EditTemplate/body/preview/output</pre>
 </div>
-<div created="20201125142352560" modified="20201126095606352" title="$:/state/FABs">
+<div created="20201125142352560" modified="20201126101914394" title="$:/state/FABs">
 <pre>no</pre>
 </div>
 <div created="20201125141645088" modified="20201125141646463" title="$:/state/plugin-info--1001812834-$:/themes/jd/Material--1053758929">
@@ -10904,8 +10896,8 @@ Movies</pre>
 <div created="20201125133259623" modified="20201125133259623" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20201125141939303" modified="20201125141940178" title="$:/state/sidebar">
-<pre>yes</pre>
+<div created="20201125141939303" modified="20201126101951317" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div created="20201125130129285" modified="20201126093715789" title="$:/state/tab--1963855381">
 <pre>$:/themes/jd/Material/Tweaks</pre>
@@ -10934,8 +10926,8 @@ Movies</pre>
 <div created="20201125125403666" modified="20201125140215955" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20201125141627720" modified="20201126095638986" title="$:/state/tab/sidebar-1845994331">
-<pre>Menu</pre>
+<div created="20201125141627720" modified="20201126101947647" title="$:/state/tab/sidebar-1845994331">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20201125131900730" modified="20201125142004105" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -10943,7 +10935,7 @@ Movies</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201126094444519" list="Welcome" modified="20201126095617938" title="$:/StoryList">
+<div created="20201126100204385" list="Welcome" modified="20201126101948742" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201126093439582" list="$:/core/ui/SideBar/Recent $:/core/ui/SideBar/More" modified="20201126093448166" title="$:/tags/SideBar">
@@ -12405,7 +12397,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
     }
 }</pre>
 </div>
-<div created="20180327133017293" creator="jd" modified="20201126093718196" modifier="jd" tags="" title="$:/themes/jd/Material/ConfigDB" type="application/json">
+<div created="20180327133017293" creator="jd" modified="20201126101951317" modifier="jd" tags="" title="$:/themes/jd/Material/ConfigDB" type="application/json">
 <pre>{
     &quot;fabmargin&quot;: &quot;5px&quot;,
     &quot;fabsize&quot;: &quot;56px&quot;,
@@ -12419,7 +12411,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
     &quot;fab6&quot;: &quot;&quot;,
     &quot;headerbtns&quot;: &quot;3&quot;,
     &quot;icon&quot;: &quot;{{$:/core/images/menu-button}}&quot;,
-    &quot;statelists&quot;: &quot;yes&quot;,
+    &quot;statelists&quot;: &quot;no&quot;,
     &quot;mobilepopups&quot;: &quot;yes&quot;,
     &quot;outlinenone&quot;: &quot;no&quot;,
     &quot;fabiconsize&quot;: &quot;26px&quot;,
@@ -12907,13 +12899,19 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20201125131843788" modified="20201125142403725" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20201126085837015" modified="20201126090116334" role="director" tags="movies" title="Delirio Caldo (1972)">
+<div created="20201126101914407" modified="20201126101958931" tags="movies" title="Avventura al motel" year="1963">
+<pre></pre>
+</div>
+<div created="20201126085837015" modified="20201126101522587" role="director" tags="movies" title="Delirio caldo" year="1972">
 <pre>Film del 1972</pre>
+</div>
+<div created="20201126101733243" modified="20201126101752602" tags="movies" title="Delitto al luna park" year="1952">
+<pre></pre>
 </div>
 <div modified="20201126095636977" title="Draft of 'Welcome'">
 <pre></pre>
 </div>
-<div created="20201126085818693" modified="20201126085830420" tags="movies" title="La verità secondo Satana (1972)">
+<div created="20201126085818693" modified="20201126101723201" tags="movies" title="La verità secondo Satana" year="1972">
 <pre>Film</pre>
 </div>
 <div created="20201125134233054" list-before="$:/core/ui/SideBar/Recent" modified="20201125142550549" tags="$:/tags/SideBar" title="Menu" type="text/vnd.tiddlywiki">
@@ -12921,13 +12919,14 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 !!! [[Bruno Vani]]
 !!! [[Movies]]</pre>
 </div>
-<div created="20201125133248871" modified="20201126090111772" tags="" title="Movies">
-<pre>A list of movies
-
-* [[La verità secondo Satana (1972)]]
-* [[Delirio Caldo (1972)]]
-
-&lt;&lt;table-dynamic filter:&quot;[tag[movies]]&quot; indexes:&quot;title tags role&quot;  sortOp:&quot;sortan&quot; caption:&quot;''Table 1. Dynamic table from data tiddler''&quot;&gt;&gt;</pre>
+<div created="20201125133248871" modified="20201126101646990" tags="" title="Movies">
+<pre>&lt;&lt;table-dynamic filter:&quot;[tag[movies]]&quot; fields:&quot;tbl-expand title year&quot; stateTiddler:&quot;exmp03&quot; class:&quot;w-100 thead-dark&quot; caption:&quot;''List of movies''&quot;&gt;&gt;</pre>
+</div>
+<div created="20201126101820369" modified="20201126101910503" tags="movies" title="Solitudine" type="" year="1961">
+<pre></pre>
+</div>
+<div created="20201126101759624" modified="20201126101816370" tags="movies" title="Ultimatum alla vita" year="1961">
+<pre></pre>
 </div>
 <div created="20201125125854324" modified="20201126095636887" tags="" title="Welcome">
 <pre>Welcome to the Polselli Wiki!</pre>
